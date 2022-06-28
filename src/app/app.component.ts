@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'exo-4';
+  animals: Array<any>;
+
+  constructor() {
+    this.animals = [];
+
+    this.animals.push({
+      name: 'CHAT',
+      text: 'Miaou',
+    });
+
+    this.animals.push({
+      name: 'CHIEN',
+      text: 'Waouf',
+    });
+  }
 }
